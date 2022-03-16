@@ -7,7 +7,13 @@
         <meta name="description" content="Play and Download your favorite Games Online !">
         <link rel="icon" href="./fav-icon.png"/>
         <title>Gameflix</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script alt="Tailwind" src="https://cdn.tailwindcss.com"></script>
+        <script alt="Javascript" src="./assets/main.js"></script>
+        <style>
+            main section div::-webkit-scrollbar{
+                background: transparent;
+            }
+        </style>
     </head>
     <body class="bg-gradient-to-r from-red-500 to-blue-500 text-white font-bold ml-5 mr-5 mt-5">
         <header class="mb-10">
@@ -32,10 +38,11 @@
                     </div>
             </section> 
         </header>
-        <main class="">
+        <main>
             <section alt="Operators">
                 <p class="text-2xl mb-6 text-white">Operators</p>
-                <div class="mb-10 flex flex-row overflow-x-scroll overflow-x-hidden ">
+                <div class="group scroll-left scroll-right scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
+                    <img onclick="michel()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/sledge.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/mira.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/fuze.jpeg">
@@ -44,11 +51,13 @@
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/iq.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/maestro.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/jackal.jpg">
+                    <img onclick="jacques()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
             <section alt="Maps">
                 <p class="text-2xl mb-6 text-white">Maps</p>
-                <div class="mb-10 flex flex-row overflow-x-scroll overflow-x-hidden">
+                <div class="group scroll-left2 scroll-right2 scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
+                    <img onclick="michel2()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/bank.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/villa.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/oregon.jpg">
@@ -57,11 +66,13 @@
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/clubhouse.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/frontiere.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/theme.jpg">
+                    <img onclick="jacques2()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
             <section alt="Players">
                 <p class="text-2xl mb-6 text-white">Players</p>
-                <div class="mb-10 flex flex-row overflow-x-scroll overflow-x-hidden ">
+                <div class="group scroll-left3 scroll-right3 scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
+                    <img onclick="michel3()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="object-cover w-48 h-96 rounded-lg mr-5" src="./assets/r6/shaiiko.png">
                     <img class="object-cover w-48 h-96 rounded-lg mr-5" src="./assets/r6/canadian.jpg">
                     <img class="object-cover w-48 h-96 rounded-lg mr-5" src="./assets/r6/beaulo.jpg">
@@ -73,6 +84,7 @@
                     <img class="object-cover w-48 h-96 rounded-lg mr-5" src="./assets/r6/shepppard.jpg">
                     <img class="object-cover w-48 h-96 rounded-lg mr-5" src="./assets/r6/geo.jfif">
                     <img class="object-cover w-48 h-96 rounded-lg mr-5" src="./assets/r6/supr.jpeg">
+                    <img onclick="jacques3()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
             <section alt="Top10">
@@ -180,9 +192,10 @@
                     <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
                 </div>
             </section>
-            <section alt="Maps">
+            <section alt="Weapons">
                 <p class="text-2xl mb-6 text-white">Weapons</p>
-                <div class="mb-10 flex flex-row overflow-x-scroll overflow-x-hidden">
+                <div class="group scroll-left4 scroll-right4 scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
+                    <img onclick="michel4()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/bank.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/villa.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/oregon.jpg">
@@ -191,11 +204,13 @@
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/clubhouse.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/frontiere.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/theme.jpg">
+                    <img onclick="jacques4()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
-            <section alt="Maps">
+            <section alt="Secondaries">
                 <p class="text-2xl mb-6 text-white">Secondaries</p>
-                <div class="mb-10 flex flex-row overflow-x-scroll overflow-x-hidden">
+                <div class="group scroll-left5 scroll-right5 scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
+                    <img onclick="michel5()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/bank.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/villa.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/oregon.jpg">
@@ -204,11 +219,13 @@
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/clubhouse.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/frontiere.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/theme.jpg">
+                    <img onclick="jacques5()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
-            <section alt="Maps">
+            <section alt="Gadgets">
                 <p class="text-2xl mb-6 text-white">Gadgets</p>
-                <div class="mb-10 flex flex-row overflow-x-scroll overflow-x-hidden">
+                <div class="group scroll-left6 scroll-right6 scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
+                    <img onclick="michel6()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/bank.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/villa.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/oregon.jpg">
@@ -217,11 +234,13 @@
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/clubhouse.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/frontiere.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/theme.jpg">
+                    <img onclick="jacques6()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
-            <section alt="Maps">
-                <p class="text-2xl mb-6 text-white">Models</p>
-                <div class="mb-10 flex flex-row overflow-x-scroll overflow-x-hidden">
+            <section alt="Skins">
+                <p class="text-2xl mb-6 text-white">Skins</p>
+                <div class="group scroll-left7 scroll-right7 scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
+                    <img onclick="michel7()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/bank.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/villa.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/oregon.jpg">
@@ -230,11 +249,13 @@
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/clubhouse.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/frontiere.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/theme.jpg">
+                    <img onclick="jacques7()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
-            <section alt="Maps">
+            <section alt="Facts">
                 <p class="text-2xl mb-6 text-white">Facts</p>
-                <div class="mb-10 flex flex-row overflow-x-scroll overflow-x-hidden">
+                <div class="group scroll-left8 scroll-right8 scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
+                    <img onclick="michel8()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/bank.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/villa.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/oregon.jpg">
@@ -243,6 +264,7 @@
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/clubhouse.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/frontiere.jpg">
                     <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/theme.jpg">
+                    <img onclick="jacques8()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
             
@@ -278,8 +300,6 @@
                     <p class="pt-5">©2015-2022 Sixflix, Inc. (sus-amogus07076976)</p>
                 </div>
             </section>
-            
-            
         </footer>
     </body>
 </html>
