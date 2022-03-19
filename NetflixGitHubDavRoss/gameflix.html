@@ -15,9 +15,9 @@
             }
         </style>
     </head>
-    <body class="bg-gradient-to-r from-red-500 to-blue-500 text-white font-bold ml-5 mr-5 mt-5">
+    <body onload="RandomImage1(), RandomImage2()" class="relative bg-gradient-to-r from-red-500 to-blue-500 text-white font-bold ml-5 mr-5 mt-5">
         <header class="mb-10">
-            <section class="flex justify-center 2xl:justify-start items-center">
+            <section class="fixed top-0 flex justify-center 2xl:justify-start items-center bg-gradient-to-r from-black to-purple-400">
                 <div class="">
                     <p alt="SixflixLogo" class="font-['Open_Sans'] text-3xl hover:cursor-pointer">SIXFLIX</p>
                 </div>
@@ -39,18 +39,18 @@
             </section> 
         </header>
         <main>
-            <section alt="Operators">
+            <section alt="Operators" >
                 <p class="text-2xl mb-6 text-white">Operators</p>
                 <div class="group scroll-left scroll-right scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
                     <img onclick="michel()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/sledge.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/mira.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/fuze.jpeg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/warden.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/maverick.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/iq.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/maestro.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/jackal.jpg">
+                    <img class="random11 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/sledge.jpg">
+                    <img class="random12 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/mira.jpg">
+                    <img class="random13 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/fuze.jpeg">
+                    <img class="random14 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/warden.jpg">
+                    <img class="random15 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/maverick.jpg">
+                    <img class="random16 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/iq.jpg">
+                    <img class="random17 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/maestro.jpg">
+                    <img class="random18 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/jackal.jpg">
                     <img onclick="jacques()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
@@ -58,14 +58,14 @@
                 <p class="text-2xl mb-6 text-white">Maps</p>
                 <div class="group scroll-left2 scroll-right2 scroll-smooth mb-10 flex flex-row overflow-x-scroll items-center">
                     <img onclick="michel2()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/bank.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/villa.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/oregon.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/coastline.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/chalet.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/clubhouse.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/frontiere.jpg">
-                    <img class="object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/theme.jpg">
+                    <img class="random21 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/bank.jpg">
+                    <img class="random22 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/villa.jpg">
+                    <img class="random23 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/oregon.jpg">
+                    <img class="random24 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/coastline.jpg">
+                    <img class="random25 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/chalet.jpg">
+                    <img class="random26 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/clubhouse.jpg">
+                    <img class="random27 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/frontiere.jpg">
+                    <img class="random28 object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/theme.jpg">
                     <img onclick="jacques2()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
@@ -267,7 +267,10 @@
                     <img onclick="jacques8()" class="w-10 right-5 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
-            
+            <div >
+                <img id="random" class="random object-cover w-68 h-40 rounded-lg mr-5" src="./assets/r6/fuze.jpeg">
+                <button onclick="RandomImage();">Random Image Dude</button>
+            </div>
         </main>
         <footer class="md:ml-20 xl:ml-44">
             <section class="flex flex-col justify-center">
