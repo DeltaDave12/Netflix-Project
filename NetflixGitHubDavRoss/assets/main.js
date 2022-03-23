@@ -198,3 +198,17 @@ function RandomImage2(){
     document.querySelector('.random28').src = image_array2[index];
 }
 
+
+//VIDEOS SECTION
+
+/*var file = $(".video").hover(hoverVideo, hideVideo);
+
+function hoverVideo(e){
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e){
+    $('video', this).get(0).pause();
+}*/
+
+
