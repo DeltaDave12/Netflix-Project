@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="David Rossig">
+        <meta name="description" content="Play and Download your favorite Games Online !">
+        <link rel="icon" href="./fav-icon.png"/>
+        <title>Sixflix</title>
+        <script alt="Tailwind" src="https://cdn.tailwindcss.com"></script>
+        <script alt="Javascript" src="./assets/main.js"></script>
+        <style>
+            main section div::-webkit-scrollbar{
+                background: transparent;
+            }
+        </style>
+    </head>
+    <body onload="RandomImage1(), RandomImage2()">
+        <header class="bg-gradient-to-b from-transparent to-red-900 w-screen h-[53.5rem]">
+            <section class="">
+                <nav class="flex flex-row justify-between mt-[1rem]" alt="nav-bar">
+                    <div class="2xl:flex flex-row items-center ">
+                        <div class="flex justify-center 2xl:flex-none">
+                            <img class="w-[10rem] 2xl:ml-[2rem] flex-none" src="./assets/header/title.png">
+                        </div>
+                        <p class="invisible 2xl:visible ml-[2rem]" alt="Home">Home</p>
+                        <p class="invisible 2xl:visible ml-[2rem]" alt="Gameplays">Gameplays</p>
+                        <p class="invisible 2xl:visible ml-[2rem]" alt="Videos">Videos</p>
+                        <p class="invisible 2xl:visible ml-[2rem]" alt="Movies">Movies</p>
+                        <p class="invisible 2xl:visible ml-[2rem]" alt="Tournaments">Tournaments</p>
+                        <p class="invisible 2xl:visible ml-[2rem]" alt="FAQ">FAQ</p>
+                    </div>
+                    <div class="flex flex-row items-center z-20">
+                        <img class="invisible 2xl:visible w-[2rem]" src="./assets/header/cloche.png">
+                        <img class="invisible 2xl:visible ml-[4rem] w-[2rem]" src="./assets/header/cadeau.png">
+                        <img class="invisible 2xl:visible ml-[4rem] w-[2rem]" src="./assets/header/loupe.png">
+                        <img class="invisible 2xl:visible ml-[4rem] w-[2rem]" src="./assets/header/profile.png">
+                        <img class="invisible 2xl:visible ml-[0.5rem] w-[1.5rem] mr-[2rem]" src="./assets/header/down-arrow.png">
+                    </div>
+                </nav>
+                <div class="ml-[2rem] mt-[25rem]">
+                    <p>Six Invitational 2022</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> 
+                    <p> Voluptatibus a fugit atque maxime 
+                        dolorem labore aliquam corporis nihil quia saepe,</p>  
+                    <p> in repellat aliquid veniam vitae ullam 
+                        quis consequatur neque repudiandae.</p> 
+                    <div class="flex flex-row items-center">
+                        <button class="ml-[2rem] w-32 h-16 bg-red-500 hover:bg-red-700 text-black font-bold rounded">Play</button>
+                        <button class="ml-[2rem] w-32 h-16 bg-green-500 hover:bg-green-700 text-black font-bold rounded">Info</button>
+                    </div>
+                </div>
+                <div>
+                    <video muted="muted" class="w-screen h-screen absolute top-0 object-cover mix-blend-overlay" src="./assets/Videos/R6_Movie_Header.mp4" poster="./assets/header/background.jpg" preload onmouseover="play()" onmouseleave="pause()"></video>
+                </div>
+            </section>
+        </header>
+        <main class="bg-gradient-to-t from-transparent to-red-900 w-screen h-screen">
+            <p class="text-transparent mb-[5rem]">LOLOLOLOL</p>
+            <section class="ml-[2rem]">
+                <p class="text-2xl">Weapons</p>
+                <div class="h-[16rem] mt-[1rem] group flex flex-row items-center overflow-x-scroll scroll-smooth scroll-left scroll-right">
+                    <img onclick="michel()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100 z-20" src="./assets/icons/arrow-left.svg">
+                    <video muted="muted" class="w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/1.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/2.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/3.jpeg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/4.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/5.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/6.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <img onclick="jacques()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
+                </div>
+            </section>
+            <section class="ml-[2rem]">
+                <p class="text-2xl ">Operators</p>
+                <div class="mt-[2rem] group flex flex-row items-center overflow-x-scroll scroll-smooth scroll-left2 scroll-right2">
+                    <img onclick="michel2()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
+                    <img class="random1 object-cover w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random2 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random3 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random4 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random5 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random6 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random7 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img onclick="jacques2()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
+                </div>
+            </section>
+            <section class="ml-[2rem]">
+                <p class="text-2xl">Maps</p>
+                <div class="mt-[2rem] group flex flex-row items-center overflow-x-scroll scroll-smooth scroll-left3 scroll-right3">
+                    <img onclick="michel3()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
+                    <img class="random8 object-cover w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random9 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random10 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random11 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random12 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random13 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img class="random14 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/categories/1.jpg">
+                    <img onclick="jacques3()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
+                </div>
+            </section>
+            <section class="text-white font-bold ml-[2rem] mr-[2rem] mt-[2rem] sm: grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 ">
+                <div class="bg-gradient-to-r from-orange-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Action</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-rose-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Animation</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-blue-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Biographies </p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-yellow-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">E-sport</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-green-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Entertainement</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-violet-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Guides</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-red-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Movies</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-cyan-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Official</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-indigo-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Profiles</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-lime-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Results</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-teal-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Shorts </p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-red-200 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Stats </p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-amber-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Tournaments </p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+                <div class="bg-gradient-to-r from-fuchsia-500 to-transparent rounded-md z-10">
+                    <p class="absolute pt-10 pl-2 text-2xl">Videos</p>
+                    <img class="mix-blend-overlay z-0 rounded-md" src="./assets/categories/deku.webp">
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
+
+
+<!--END-->
+
