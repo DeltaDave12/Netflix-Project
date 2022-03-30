@@ -103,54 +103,50 @@ window.onload = RandomImage1
 var type = document.getElementsByTagName("img")
 
 /*Section 1*/ 
-let image_array1 = ["./assets/r6/aruni.jpg", 
-"./assets/r6/frost.jpg", 
-"./assets/r6/fuze.jpeg",
-"./assets/r6/castle.jpg",
-"./assets/r6/nokk.jpg",
-"./assets/r6/pulse.jpg",
-"./assets/r6/iq.jpg",
-"./assets/r6/jackal.jpg",
-"./assets/r6/kapkan.jpg", 
-"./assets/r6/maestro.jpg",
-"./assets/r6/maverick.jpg",
-"./assets/r6/melusi.jpg",
-"./assets/r6/ace.jpg",
-"./assets/r6/mozzie.jpg",
-"./assets/r6/mira.jpg",
-"./assets/r6/osa.png",
-"./assets/r6/grid.jpg",
-"./assets/r6/ash.jpg",
-"./assets/r6/sledge.jpg",
-"./assets/r6/warden.jpg"] 
+let image_array1 = ["./assets/categories/1.jpg", 
+"./assets/categories/2.jpg", 
+"./assets/categories/3.jpg",
+"./assets/categories/4.jpg",
+"./assets/categories/5.jpg",
+"./assets/categories/6.jpg",
+"./assets/categories/7.jpg",
+"./assets/categories/8.jpg",
+"./assets/categories/9.jpg", 
+"./assets/categories/10.jpg",
+"./assets/categories/11.jpg",
+"./assets/categories/12.jpg",
+"./assets/categories/13.jpg",
+"./assets/categories/14.jpg",
+"./assets/categories/15.jpg",
+"./assets/categories/16.jpg",
+"./assets/categories/17.jpg",
+"./assets/categories/18.jpg",
+"./assets/categories/19.jpg",
+"./assets/categories/20.jpg"] 
 
 
 function RandomImage1(){
     let index = Math.floor(Math.random()*image_array1.length)
-    document.querySelector('.random11').src = image_array1[index];
+    document.querySelector('.random1').src = image_array1[index];
 
     index = Math.floor(Math.random()*image_array1.length)
-    document.querySelector('.random12').src = image_array1[index];
+    document.querySelector('.random2').src = image_array1[index];
 
     index = Math.floor(Math.random()*image_array1.length)
-    document.querySelector('.random13').src = image_array1[index];
+    document.querySelector('.random3').src = image_array1[index];
 
     index = Math.floor(Math.random()*image_array1.length)
-    document.querySelector('.random14').src = image_array1[index];
+    document.querySelector('.random4').src = image_array1[index];
 
     index = Math.floor(Math.random()*image_array1.length)
-    document.querySelector('.random15').src = image_array1[index];
+    document.querySelector('.random5').src = image_array1[index];
 
     index = Math.floor(Math.random()*image_array1.length)
-    document.querySelector('.random16').src = image_array1[index];
+    document.querySelector('.random6').src = image_array1[index];
 
     index = Math.floor(Math.random()*image_array1.length)
-    document.querySelector('.random17').src = image_array1[index];
-
-    index = Math.floor(Math.random()*image_array1.length)
-    document.querySelector('.random18').src = image_array1[index];
+    document.querySelector('.random7').src = image_array1[index];
 }
-
 
 /*Section 2*/ 
 let image_array2 = ["./assets/r6/bank.jpg", 
@@ -174,28 +170,25 @@ let image_array2 = ["./assets/r6/bank.jpg",
 
 function RandomImage2(){
     let index = Math.floor(Math.random()*image_array2.length)
-    document.querySelector('.random21').src = image_array2[index];
+    document.querySelector('.random8').src = image_array2[index];
 
     index = Math.floor(Math.random()*image_array2.length)
-    document.querySelector('.random22').src = image_array2[index];
+    document.querySelector('.random9').src = image_array2[index];
 
     index = Math.floor(Math.random()*image_array2.length)
-    document.querySelector('.random23').src = image_array2[index];
+    document.querySelector('.random10').src = image_array2[index];
 
     index = Math.floor(Math.random()*image_array2.length)
-    document.querySelector('.random24').src = image_array2[index];
+    document.querySelector('.random11').src = image_array2[index];
 
     index = Math.floor(Math.random()*image_array2.length)
-    document.querySelector('.random25').src = image_array2[index];
+    document.querySelector('.random12').src = image_array2[index];
 
     index = Math.floor(Math.random()*image_array2.length)
-    document.querySelector('.random26').src = image_array2[index];
+    document.querySelector('.random13').src = image_array2[index];
 
     index = Math.floor(Math.random()*image_array2.length)
-    document.querySelector('.random27').src = image_array2[index];
-
-    index = Math.floor(Math.random()*image_array2.length)
-    document.querySelector('.random28').src = image_array2[index];
+    document.querySelector('.random14').src = image_array2[index];
 }
 
 
