@@ -13,6 +13,27 @@
             main section div::-webkit-scrollbar{
                 background: transparent;
             }
+
+            .no-scrollbar::-webkit-scrollbar{
+                background: transparent;
+            } 
+
+            .hide {
+                display: none;
+            }
+
+            .hide:hover {
+                display: block;
+            }
+            
+            .myDIV:hover + .hide {
+                display: block;
+                color: red;
+            }
+
+            img:hover{
+                cursor: pointer;
+            }
         </style>
     </head>
     <body onload="RandomImage1(), RandomImage2()" class="overflow-x-hidden text-white">
@@ -23,35 +44,126 @@
                             <div class="flex justify-center 2xl:flex-none">
                                 <img class="w-[10rem] 2xl:ml-[2rem] flex-none" src="./assets/header/title2.png">
                             </div>
-                            <p class="invisible 2xl:visible ml-[2rem]" alt="Home">Home</p>
-                            <p class="invisible 2xl:visible ml-[2rem]" alt="Gameplays">Gameplays</p>
-                            <p class="invisible 2xl:visible ml-[2rem]" alt="Videos">Videos</p>
-                            <p class="invisible 2xl:visible ml-[2rem]" alt="Movies">Movies</p>
-                            <p class="invisible 2xl:visible ml-[2rem]" alt="Tournaments">Tournaments</p>
-                            <p class="invisible 2xl:visible ml-[2rem]" alt="FAQ">FAQ</p>
+                            <p class="invisible 2xl:visible ml-[2rem] font-bold hover:text-gray-500 cursor-pointer showDiv" alt="Home" onmouseover="">Home</p>
+                            <p class="invisible 2xl:visible ml-[2rem] font-bold hover:text-gray-500 cursor-pointer"  alt="Gameplays">Gameplays</p>
+                            <p class="invisible 2xl:visible ml-[2rem] font-bold hover:text-gray-500 cursor-pointer" alt="Videos">Videos</p>
+                            <p class="invisible 2xl:visible ml-[2rem] font-bold hover:text-gray-500 cursor-pointer" alt="Movies">Movies</p>
+                            <p class="invisible 2xl:visible ml-[2rem] font-bold hover:text-gray-500 cursor-pointer" alt="Tournaments">Tournaments</p>
+                            <p class="invisible 2xl:visible ml-[2rem] font-bold hover:text-gray-500 cursor-pointer" alt="FAQ">FAQ</p>
                         </div>
                         <div class="flex flex-row items-center">
-                            <img class="invisible 2xl:visible w-[2rem]" onmouseover="console.log('SUSUSUSUU')" src="./assets/header/cloche.png">
-                            <img class="invisible 2xl:visible ml-[4rem] w-[2rem]" src="./assets/header/cadeau.png">
-                            <img class="invisible 2xl:visible ml-[4rem] w-[2rem]" src="./assets/header/loupe.png">
-                            <img class="invisible 2xl:visible ml-[4rem] w-[2rem]" src="./assets/header/profile.png">
-                            <img class="invisible 2xl:visible ml-[0.5rem] w-[1.5rem] mr-[2rem]" src="./assets/header/down-arrow.png">
+                            <img class="invisible 2xl:visible w-[2rem] myDIV hover:cursor-pointer" src="./assets/header/cloche.png">
+                            <div class="absolute hidden text-white bell_area hide">
+                                <div class="flex bg-gray-500 bg-opacity-50 rounded-lg hover:bg-opacity-100 w-[20rem] h-[30rem] mt-[33rem]">
+                                    <section class="flex flex-row object-cover  mt-[1rem] ml-[1rem] overflow-y-scroll no-scrollbar hover:visible">
+                                        <div class="">
+                                            <img class="w-[5rem] h-[5rem] rounded-lg" src="./assets/header/notif1.jpg">
+                                            <img class="w-[5rem] h-[5rem] rounded-lg mt-[2rem]" src="./assets/header/notif2.jpg">
+                                            <img class="w-[5rem] h-[5rem] rounded-lg mt-[2rem]" src="./assets/header/notif3.jpg">
+                                            <img class="w-[5rem] h-[5rem] rounded-lg mt-[2rem]" src="./assets/header/notif4.jpg">
+                                            <img class="w-[5rem] h-[5rem] rounded-lg mt-[2rem]" src="./assets/header/notif5.jpg">
+                                            <img class="w-[5rem] h-[5rem] rounded-lg mt-[2rem]" src="./assets/header/notif6.jpg">
+                                        </div>
+                                        <div class="flex flex-col ml-[1rem]">
+                                            <div class="">
+                                                <p class="font-bold">Continuer à regarder</p>
+                                                <p class="font-semibold">Frost and Buck</p>
+                                                <p class="text-sm text-yellow-100">26 Octobre 2022</p>
+                                            </div>
+                                            <div class="mt-[2.5rem]">
+                                                <p class="font-bold">Nouveauté !</p>
+                                                <p class="font-semibold">LATAM Classement</p>
+                                                <p class="text-sm text-yellow-100">4 Juillet 2022</p>
+                                            </div>
+                                            <div class="mt-[2.5rem]">
+                                                <p class="font-bold">Netflix Special</p>
+                                                <p class="font-semibold">Le nouveau prodige canadien</p>
+                                                <p class="text-sm text-yellow-100">6 Juin 2022</p>
+                                            </div>
+                                            <div class="mt-[2.5rem]">
+                                                <p class="font-bold">À ne pas manquer !</p>
+                                                <p class="font-semibold">Coupe du Monde 2022</p>
+                                                <p class="text-sm text-yellow-100">17 Avril 2022</p>
+                                            </div>
+                                            <div class="mt-[2.5rem]">
+                                                <p class="font-bold">Offre Limité !</p>
+                                                <p class="font-semibold">Achetez le gaming pass</p>
+                                                <p class="text-sm text-yellow-100">26 Mars 2022</p>
+                                            </div>
+                                            <div class="mt-[2.5rem]">
+                                                <p class="font-bold">Cette semaine</p>
+                                                <p class="font-semibold">Saison 2 de "Rainbow Extraction"</p>
+                                                <p class="text-sm text-yellow-100">22 Mars 2022</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <img class="invisible 2xl:visible ml-[4rem] w-[2rem] hover:cursor-pointer" src="./assets/header/cadeau.png">
+                            <img class="invisible 2xl:visible ml-[4rem] w-[2rem] hover:cursor-pointer" src="./assets/header/loupe.png">
+                            <img class="invisible 2xl:visible ml-[4rem] myDIV w-[2rem] hover:cursor-pointer" src="./assets/header/profile.png">
+                            <div class="absolute hidden text-white bell_area hide">
+                                <div class="flex bg-gray-500 bg-opacity-50 rounded-lg hover:bg-opacity-100 w-[20rem] h-[40rem] mt-[43rem]">
+                                    <section class="flex flex-row object-cover  mt-[1rem] ml-[1rem] overflow-y-scroll no-scrollbar hover:visible">
+                                        <div class="">
+                                            <img class="w-[3rem] h-[3rem] rounded-lg" src="./assets/header/profil1.jpg">
+                                            <img class="w-[3rem] h-[3rem] rounded-lg mt-[2rem]" src="./assets/header/profil2.jpg">
+                                            <img class="w-[3rem] h-[3rem] rounded-lg mt-[2rem]" src="./assets/header/profil3.jpg">
+                                            <img class="w-[3rem] h-[3rem] rounded-lg mt-[2rem]" src="./assets/header/profil4.png">
+                                            <img class="w-[1.5rem] h-[1.5rem] rounded-lg mt-[3rem]" src="./assets/header/pen.ico">
+                                            <img class="w-[2rem] h-[2rem] rounded-lg mt-[1rem]" src="./assets/header/exit.ico">
+                                            <img class="w-[2rem] h-[2rem] rounded-lg mt-[2rem]" src="./assets/header/account.png">
+                                            <img class="w-[2rem] h-[2rem] rounded-lg mt-[1rem]" src="./assets/header/question.png">
+                                        </div>
+                                        <div class="flex flex-col ml-[1rem]">
+                                            <div class="">
+                                                <p class="font-bold mt-[0.75rem] hover:text-violet-600 cursor-pointer">Billie</p>
+                                            </div>
+                                            <div class="mt-[3.50rem] hover:text-red-400 cursor-pointer">
+                                                <p class="font-bold">Powerwolf</p>
+                                            </div>
+                                            <div class="mt-[3.50rem] hover:text-lime-600 cursor-pointer">
+                                                <p class="font-bold">Damien</p>
+                                            </div>
+                                            <div class="mt-[3.50rem] hover:text-blue-600 cursor-pointer">
+                                                <p class="font-bold">Hinata</p>
+                                            </div>
+                                            <div class="mt-[3.75rem] hover:cursor-pointer">
+                                                <p class="font-semibold">Modifier</p>
+                                            </div>
+                                            <div class="mt-[1.25rem] hover:cursor-pointer">
+                                                <p class="font-semibold">Changer d'Utilisateur</p>
+                                            </div>
+                                            <div class="mt-[2.5rem] hover:cursor-pointer">
+                                                <p class="font-semibold">Compte</p>
+                                            </div>
+                                            <div class="mt-[1.25rem] hover:cursor-pointer">
+                                                <p class="font-semibold">Aide</p>
+                                            </div>
+                                            <div class="mt-[2.5rem] ml-[2rem] hover:text-red-600 cursor-pointer">
+                                                <p class="font-semibold">Se Déconnecter</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <img class="invisible 2xl:visible ml-[0.5rem] myDIV w-[1.5rem] mr-[2rem] hover:cursor-pointer" src="./assets/header/down-arrow.png">
                         </div>
                     </nav>
                 <div class="ml-[2rem] mt-[25rem] absolute z-20">
-                    <p>Six Invitational 2022</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> 
-                    <p> Voluptatibus a fugit atque maxime 
+                    <p class="ml-[2rem] font-bold text-yellow-100 text-[2rem]">SIX INVITATIONAL 2022</p>
+                    <p class="ml-[2rem] font-semibold text-[1rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> 
+                    <p class="ml-[2rem] font-semibold text-[1rem]"> Voluptatibus a fugit atque maxime 
                         dolorem labore aliquam corporis nihil quia saepe,</p>  
-                    <p> in repellat aliquid veniam vitae ullam 
+                    <p class="ml-[2rem] font-semibold text-[1rem]"> in repellat aliquid veniam vitae ullam 
                         quis consequatur neque repudiandae.</p> 
-                    <div class="flex flex-row items-center">
+                    <div class="flex flex-row items-center mt-5">
                         <button class="ml-[2rem] w-32 h-16 bg-blue-500 hover:bg-blue-700 text-black font-bold rounded">Play</button>
                         <button class="ml-[2rem] w-32 h-16 bg-green-500 hover:bg-green-700 text-black font-bold rounded">Info</button>
                     </div>
                 </div>
                 <div>
-                    <video muted="muted" class="w-screen h-screen absolute top-0 object-cover mix-blend-overlay z-10" src="./assets/Videos/R6_Movie_Header.mp4" poster="./assets/header/background.jpg" preload onmouseover="play()" onmouseleave="pause()"></video>
+                    <video muted="muted" loop class="w-screen h-screen absolute top-0 object-cover mix-blend-overlay z-10" src="./assets/Videos/R6_Movie_Header.mp4" poster="./assets/header/background.jpg" preload onmouseover="play()" onmouseleave="pause()"></video>
                 </div>
             </section>
         </header>
@@ -61,13 +173,13 @@
                 <p class="ml-[2rem] text-2xl">Weapons</p>
                 <div class="h-[16rem] mt-[1rem] group flex flex-row items-center overflow-x-scroll scroll-smooth scroll-left scroll-right">
                     <img onclick="michel()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100 z-20" src="./assets/icons/arrow-left.svg">
-                    <video muted="muted" class="ml-[2rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/1.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
-                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/2.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
-                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/3.jpeg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
-                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/4.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
-                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/5.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
-                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/6.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
-                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[2rem] w-[20rem] rounded-lg hover:scale-125 transition-transform cursor-pointer" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/1.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform cursor-pointer" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/2.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform cursor-pointer" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/3.jpeg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform cursor-pointer" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/4.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform cursor-pointer" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/5.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform cursor-pointer" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/6.jpg" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
+                    <video muted="muted" class="ml-[1rem] w-[20rem] rounded-lg hover:scale-125 transition-transform cursor-pointer" src="./assets/Videos/R6_Movie_Header.mp4" poster="assets/weapons/" preload onmouseover="play()" onmouseleave="pause(), reset()"></video>
                     <img onclick="jacques()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
@@ -198,9 +310,23 @@
                 </div>
             </section>
             <section class="ml-[2rem]">
-                <p class="text-2xl">Originals</p>
+                <p class="text-2xl ">Skins</p>
                 <div class="mt-[2rem] group flex flex-row items-center overflow-x-scroll scroll-smooth scroll-left5 scroll-right5">
                     <img onclick="michel5()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
+                    <img class="random1 object-cover w-[20rem] rounded-lg" src="assets/skins/1.jpg">
+                    <img class="random2 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/skins/2.jpg">
+                    <img class="random3 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/skins/3.jpg">
+                    <img class="random4 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/skins/4.jpg">
+                    <img class="random5 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/skins/5.jpg">
+                    <img class="random6 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/skins/6.jpg">
+                    <img class="random7 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/skins/7.jpg">
+                    <img onclick="jacques5()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
+                </div>
+            </section>
+            <section class="ml-[2rem]">
+                <p class="text-2xl">Originals</p>
+                <div class="mt-[2rem] group flex flex-row items-center overflow-x-scroll scroll-smooth scroll-left6 scroll-right6">
+                    <img onclick="michel6()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
                     <img class="w-[20rem] rounded-lg object-cover" src="assets/originals/1.jpg">
                     <img class="ml-[1rem] w-[20rem] rounded-lg object-cover" src="assets/originals/2.jpg">
                     <img class="ml-[1rem] w-[20rem] rounded-lg object-cover" src="assets/originals/3.jpg">
@@ -208,13 +334,40 @@
                     <img class="ml-[1rem] w-[20rem] rounded-lg object-cover" src="assets/originals/5.jpg">
                     <img class="ml-[1rem] w-[20rem] rounded-lg object-cover" src="assets/originals/6.jpg">
                     <img class="ml-[1rem] w-[20rem] rounded-lg object-cover" src="assets/originals/7.jpg">
-                    <img onclick="jacques5()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
+                    <img onclick="jacques6()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
                 </div>
             </section>
-            
+            <section class="ml-[2rem]">
+                <p class="text-2xl ">Videos</p>
+                <div class="mt-[2rem] group flex flex-row items-center overflow-x-scroll scroll-smooth scroll-left7 scroll-right7">
+                    <img onclick="michel7()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
+                    <img class="random1 object-cover w-[20rem] rounded-lg" src="assets/Videos/1.jpg">
+                    <img class="random2 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/Videos/2.jpg">
+                    <img class="random3 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/Videos/3.jpg">
+                    <img class="random4 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/Videos/4.jpg">
+                    <img class="random5 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/Videos/5.jpg">
+                    <img class="random6 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/Videos/6.jpg">
+                    <img class="random7 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/Videos/7.jpg">
+                    <img onclick="jacques7()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
+                </div>
+            </section>
+            <section class="ml-[2rem]">
+                <p class="text-2xl ">Youtubers</p>
+                <div class="mt-[2rem] group flex flex-row items-center overflow-x-scroll scroll-smooth scroll-left8 scroll-right8">
+                    <img onclick="michel8()" class="w-10 absolute opacity-0 hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-left.svg">
+                    <img class="random1 object-cover w-[20rem] rounded-lg" src="assets/youtubers/1.webp">
+                    <img class="random2 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/youtubers/2.webp">
+                    <img class="random3 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/youtubers/3.webp">
+                    <img class="random4 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/youtubers/4.jpg">
+                    <img class="random5 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/youtubers/5.jpg">
+                    <img class="random6 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/youtubers/6.jpg">
+                    <img class="random7 object-cover ml-[1rem] w-[20rem] rounded-lg" src="assets/youtubers/beaulo.webp">
+                    <img onclick="jacques8()" class="w-10 right-5 opacity-0 absolute hover:cursor-pointer group-hover:opacity-100" src="./assets/icons/arrow-right.svg">
+                </div>
+            </section>
         </main>
-        <footer class="bg-gray-900 w-screen h-max ml-[2rem]"> <!--Comment regler le bg ????-->
-            <section class="flex flex-col justify-center">
+        <footer class="bg-gray-900 w-full h-screen"> <!--Comment regler le bg ????-->
+            <section class="flex flex-col justify-center ml-[2rem]">
                 <div>
                     <div class="flex flex-row">
                         <img class="w-10" src="./assets/footer/facebook-svgrepo-com.svg">
@@ -253,3 +406,5 @@ David:-->
 
 <!--END-->
 
+//Push projet dans github 
+//Netlify, cliquer sur add new site. Faire par GitHub 
